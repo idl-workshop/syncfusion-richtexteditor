@@ -26,55 +26,48 @@ export class Tab2Page implements OnInit {
   // https://ej2.syncfusion.com/angular/documentation/getting-started/ionic/
   // https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/
 
-  // unusued
-  public value1: string = `
-  <h1>foo 1</h1>
-  `;
+  // Get/set Text Value
+  get value1(): string {
+    return this.rte1.value; 
+  }
+  @Input()
+  set value1(value: string) {
+    this.rte1.value = value;
+  }
 
   // Get/set Text Value
   get value2(): string {
-    return this.rte2.value; // this.rteObj.value; // 'Video';
+    return this.rte2.value;
   }
   @Input()
   set value2(value: string) {
-    this.rte2.value = value; //.rteObj.value = value; // 'Video';
+    this.rte2.value = value;
   }
-
-  // // 1-way bound
-  // public value2: string = `
-  // <h1>foo 2</h1>
-  // `;
-
-  // // 1-way bound
-  // public value3: string = `
-  // <h1>foo 3</h1>
-  // `;
 
   // Get/set Text Value
   get value3(): string {
-    return this.rte3.value; // this.rteObj.value; // 'Video';
+    return this.rte3.value;
   }
   @Input()
   set value3(value: string) {
-    this.rte3.value = value; //.rteObj.value = value; // 'Video';
+    this.rte3.value = value;
   }
 
   // Get/set Text Value
   get value4(): string {
-    return this.rte4.value; // this.rteObj.value; // 'Video';
+    return this.rte4.value;
   }
   @Input()
   set value4(value: string) {
-    this.rte4.value = value; //.rteObj.value = value; // 'Video';
+    this.rte4.value = value;
   }
-
 
   public height: number = 100;
 
   constructor() {}
 
   public save1() {
-    console.log(`RTE #1 - unknown`);
+    console.log(`RTE #1 - ${this.value1}`);
   }
 
   public save2() {
@@ -94,7 +87,7 @@ export class Tab2Page implements OnInit {
     this.rte1.value = '<p>Value 1</p>'; // should override template?
     this.rte2.value = '<p>Value 2</p>';
     this.rte3.value = '<p>Value 3</p>';
-    this.rte3.value = '<p>Value 4</p>';
+    this.rte4.value = '<p>Value 4</p>';
 
     // Works!
 //    console.log(this.markdownService.compile('I am using __markdown__.'));

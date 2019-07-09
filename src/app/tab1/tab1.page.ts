@@ -50,7 +50,7 @@ export class Tab1Page {
     console.log(`RTE #3 - ${this.value3}`);
   }
 
-  public save3() {
+  public save4() {
     console.log(`RTE #4 - ${this.value4}`);
   }
 

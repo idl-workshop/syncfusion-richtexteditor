@@ -47,8 +47,7 @@
       <ion-card-content>
   
         <ejs-richtexteditor #rte2 id='defaultRTE2' 
-          [height]='height'
-          [value]='value2'>
+          >
         </ejs-richtexteditor>
   
         <ion-button (click)="save2()">Save</ion-button>
@@ -64,7 +63,6 @@
       <ion-card-content>
   
         <ejs-richtexteditor #rte3 id='defaultRTE3' 
-          [height]='height'
           >
         </ejs-richtexteditor>
   
@@ -72,6 +70,22 @@
   
       </ion-card-content>
     </ion-card>
-  
+
+    <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>SyncFusion RichTextEditor</ion-card-subtitle>
+          <ion-card-title>#4 - RichTextEditor with HTML Value & Height</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+    
+          <ejs-richtexteditor #rte4 id='defaultRTE4' 
+            >
+          </ejs-richtexteditor>
+    
+          <ion-button (click)="save4()">Save</ion-button>
+    
+        </ion-card-content>
+      </ion-card>
+      
   </ion-content>
   
