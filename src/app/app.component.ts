@@ -4,9 +4,12 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
+  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
 export class AppComponent {
   constructor(
@@ -23,4 +26,5 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
 }
