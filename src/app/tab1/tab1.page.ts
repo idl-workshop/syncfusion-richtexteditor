@@ -12,16 +12,19 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@s
 export class Tab1Page {
 
   // https://ej2.syncfusion.com/angular/documentation/getting-started/ionic/
-  // https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/?no-cache=1#module-injection
+  // https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/
 
+  // unusued
   public value1: string = `
   <h1>foo 1</h1>
   `;
 
+  // 2-way bound
   public value2: string = `
   <h1>foo 2</h1>
   `;
 
+  // 2-way bound
   public value3: string = `
   <h1>foo 3</h1>
   `;
