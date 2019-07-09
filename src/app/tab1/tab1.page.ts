@@ -29,7 +29,12 @@ export class Tab1Page {
   <h1>foo 3</h1>
   `;
 
-  public height: number = 500;
+  // 2-way bound
+  public value4: string = `
+  <h1>foo 4</h1>
+  `;
+
+  public height: number = 250;
 
   constructor() {}
 
@@ -43,6 +48,10 @@ export class Tab1Page {
 
   public save3() {
     console.log(`RTE #3 - ${this.value3}`);
+  }
+
+  public save3() {
+    console.log(`RTE #4 - ${this.value4}`);
   }
 
 }

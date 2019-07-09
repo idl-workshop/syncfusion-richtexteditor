@@ -1,40 +1,77 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Rich Text Editor - Markdown
+      Rich Text Editor - HTML (v2)
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card class="welcome-card">
-    <ion-img src="/assets/shapes.svg"></ion-img>
-    <ion-card-header>
-      <ion-card-subtitle>Get Started</ion-card-subtitle>
-      <ion-card-title>Welcome to Ionic</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
 
-      <ejs-richtexteditor id='defaultRTE'>
-        <ng-template #valueTemplate>
-          <p>The RichTextEditor component is WYSIWYG ("what you see is what you get") editor that provides the best user experience to create and update the content.
-          Users can format their content using standard toolbar commands.</p>
-          <p><b>Key features:</b></p>
-          <ul><li><p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p></li>
-          <li><p>Capable of handling markdown editing.</p></li>
-          <li><p>Contains a modular library to load the necessary functionality on demand.</p></li>
-          <li><p>Provides a fully customizable toolbar.</p></li>
-          <li><p>Provides HTML view to edit the source directly for developers.</p></li>
-          <li><p>Supports third-party library integration.</p></li>
-          <li><p>Allows preview of modified content before saving it.</p></li>
-          <li><p>Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
-          <li><p>Contains undo/redo manager. </p></li>
-          <li><p>Creates bulleted and numbered lists.</p></li>
-          </ul>
-        </ng-template>
-      </ejs-richtexteditor>
-
-    </ion-card-content>
-  </ion-card>
-
-</ion-content>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-subtitle>SyncFusion RichTextEditor</ion-card-subtitle>
+        <ion-card-title>#1 - RichTextEditor with HTML Template</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+  
+        <ejs-richtexteditor #rte1 id='defaultRTE1'>
+          <ng-template #valueTemplate>
+            <p>The RichTextEditor component is WYSIWYG ("what you see is what you get") editor that provides the best user experience to create and update the content.
+            Users can format their content using standard toolbar commands.</p>
+            <p><b>Key features:</b></p>
+            <ul><li><p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p></li>
+            <li><p>Capable of handling markdown editing.</p></li>
+            <li><p>Contains a modular library to load the necessary functionality on demand.</p></li>
+            <li><p>Provides a fully customizable toolbar.</p></li>
+            <li><p>Provides HTML view to edit the source directly for developers.</p></li>
+            <li><p>Supports third-party library integration.</p></li>
+            <li><p>Allows preview of modified content before saving it.</p></li>
+            <li><p>Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
+            <li><p>Contains undo/redo manager. </p></li>
+            <li><p>Creates bulleted and numbered lists.</p></li>
+            </ul>
+          </ng-template>
+        </ejs-richtexteditor>
+  
+        <ion-button (click)="save1()">Save</ion-button>
+  
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-subtitle>SyncFusion RichTextEditor</ion-card-subtitle>
+        <ion-card-title>#2 - RichTextEditor with HTML Value</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+  
+        <ejs-richtexteditor #rte2 id='defaultRTE2' 
+          [height]='height'
+          [value]='value2'>
+        </ejs-richtexteditor>
+  
+        <ion-button (click)="save2()">Save</ion-button>
+  
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-subtitle>SyncFusion RichTextEditor</ion-card-subtitle>
+        <ion-card-title>#3 - RichTextEditor with HTML Value & Height</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+  
+        <ejs-richtexteditor #rte3 id='defaultRTE3' 
+          [height]='height'
+          >
+        </ejs-richtexteditor>
+  
+        <ion-button (click)="save3()">Save</ion-button>
+  
+      </ion-card-content>
+    </ion-card>
+  
+  </ion-content>
+  

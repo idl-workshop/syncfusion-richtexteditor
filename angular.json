@@ -40,7 +40,7 @@
               "node_modules/@syncfusion/ej2-lists/styles/material.css",
               "node_modules/@syncfusion/ej2-navigations/styles/material.css",
               "node_modules/@syncfusion/ej2-popups/styles/material.css",
-              "node_modules/@syncfusion/ej2-richtexteditor/styles/material.css",              
+              "node_modules/@syncfusion/ej2-richtexteditor/styles/material.css",     
               {
                 "input": "src/theme/variables.scss"
               },
